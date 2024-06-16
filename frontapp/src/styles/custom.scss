@@ -1,0 +1,133 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("/src/assets/kwik-E-mart.png");
+}
+
+.bg-kem{
+    background-image: url("/src/assets/kwik-E-mart.png");
+    background-color: rgb(201, 190, 188);
+}
+
+.bg-springfield{
+    background-image: url("/src/assets/springfield-people.jpg");
+    /* background-color: #314344eb;     */
+    background-color: #c4f0ffeb;
+}
+
+.bg-springfield-2{
+    background-image: url("/src/assets/springfield-2.png");
+}
+
+img{
+    height: 200px;
+}
+
+.container-navbar{ 
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.cards{
+    display: grid;
+    grid-gap:2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    place-items: center;
+
+    a{
+        text-decoration: none;
+    }
+    .card{
+        max-width: 100%;
+    }
+}
+
+.bg-opc{    
+    background-color: #28272799;
+    padding-block: 2rem;
+    margin-top: 4rem;
+    border-radius: 10px; 
+    border: solid 1px #ffffff5c;   
+}
+
+.alert-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+}
+
+.customAlert{
+    min-width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.error i::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f057" ;
+    font-weight: 900;
+    margin-right: 8px;
+    font-style: normal;
+    font-size: 80px;
+    color: #ff5454;
+}
+
+.success i::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f058" ;
+    font-weight: 900;
+    margin-right: 8px;
+    font-style: normal;
+    font-size: 80px;
+    color: rgb(5, 138, 49);
+}
+
+.info i::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a" ;
+    font-weight: 900;
+    margin-right: 8px;
+    font-style: normal;
+    font-size: 80px;
+    color: rgb(229, 162, 35);
+}
+
+.wrap{
+    color:red !important
+}
+.btn-ct-alert{
+    background-image: none;
+    border: solid 1px #b9b9b9;
+    display: flex;
+    align-items: center;
+    min-width: 70px;
+    padding: 10px !important;
+    justify-content: center;
+    // background-color: #ffffff;
+    font-weight: 700;
+    right: auto !important;
+    opacity: 0.6;
+}
+
+.kzZBXj{
+    white-space: normal !important;
+}
